@@ -1,5 +1,7 @@
 class Solver
-  def fuctorial(num)
-    num * fuctorial(num)
+  def factorial(num)
+    return raise StandardError, 'Cannot find a factorial for a negative number' if num.negative?
+    return 1 if num.zero?
+    num * factorial(num - 1)
   end
 end
