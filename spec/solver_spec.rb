@@ -1,10 +1,10 @@
 require './solver'
 
 describe Solver do
-  context 'In the Solver class,' do
+  context 'In the Solver class' do
     solver = Solver.new
 
-    it 'the method factorial should return the factorial of given integer' do
+    it 'factorial should return the factorial of given integer' do
       value = 3
       result = solver.factorial(value)
       expect(result).to eq 6
@@ -21,7 +21,6 @@ describe Solver do
       result = solver.factorial(value)
       expect(result).to eq 1
     end
-
     it 'the method factorial should return the factorial of given integer' do
       value = 1
       result = solver.factorial(value)
@@ -38,7 +37,10 @@ describe Solver do
       result = solver.reverse(value)
       expect(result).to eq 'esrevorciM'
     end
+  end
 
+  context 'In the Solver class' do
+    solver = Solver.new
     it 'the method fizzbuzz should return "fizz"' do
       value = 3
       10.times do |_i|
