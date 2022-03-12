@@ -1,9 +1,14 @@
-# SCHOOL LIBRARY
+# TDD Project
 
-> Imagine that you are the librarian of OOP University, and you need a tool to record what books are in the library and who borrows them. The app that you will create will allow a you to:  
-- Add new students or teachers. 
-- Add new books.
-- Save records of who borrowed a given book and when.
+> ### The Project accomplishes these requirements:
+
+Create a method called `factorial` that takes one argument, an integer `N`, and returns the [factorial](https://en.wikipedia.org/wiki/Factorial) for that number. The factorial is the multiplication of all integers from 1 to `N` and has the special case that the factorial of 0 is 1. This method only accepts 0 and positive integers, so if a negative integer is given it should raise an exception.
+- Create a method called `reverse` that takes one argument, a string `word`, and returns `word` reversed (e.g. if `word` is `"hello"` it returns `"olleh"`).
+- Create a method called `fizzbuzz` that takes one argument, an integer `N`, and returns a string. The returned string is constructed following these rules:
+  - When `N` is divisible by 3, return `"fizz"`.
+  - When `N` is divisible by 5, return `"buzz"`.
+  - When `N` is divisible by 3 and 5, return `"fizzbuzz"`.
+  - Any other case, return `N` as a string (e.g. say `N` is `7` then return `"7"`).
 
 ## Project screenshots
 
@@ -15,14 +20,9 @@ Additional description about the project and its features.
 
 - RUBY
 
-## Gems Used
-
-- Rubocop
-- Colorize
-
 ## How to Setup
 
-> You can simply clone or download [this repository](https://github.com/Mosams/school_library.git), and use your favorite browser or code editor to run this program.
+> You can simply clone or download [this repository](git@github.com:Mosams/TDD_Project.git), and use your favorite browser or code editor to run this program.
 
 - To open the project after download, simply double click the index.html file
 
@@ -30,7 +30,7 @@ Additional description about the project and its features.
   > in your cmd or command line navigate to where this project is located, then;
 
 ```cmd
-cd school_library
+cd TDD_Project
 ```
 
 > thereafter run
@@ -45,7 +45,7 @@ code .
   > in your cmd or command line navigate to where this project is located, then;
 
 ```cmd
-cd school_library
+cd TDD_Project
 ```
 
 ## Install Gems
@@ -54,23 +54,26 @@ cd school_library
 ```cmd
 bundle install
 ```
-```cmd
-gem install colorize
-```
-
 > thereafter run
 
 ```cmd
 ./main.rb
 ```
 
-## Author
+## Authors
 
 👤 **Mongare S.**
 
 - GitHub: [@githubhandle](https://github.com/Mosams/)
 - Twitter: [@twitterhandle](https://twitter.com/sam_mongare)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/sammy-mongare-b8288310b/)
+
+👤 **Amadu Kamara (Amkam)**
+
+- [GitHub](https://github.com/AmaduKamara)
+- [LinkedIn](https://www.linkedin.com/in/amadu-kamara-3b60a25b)
+- [Twitter](https://twitter.com/DevAmkam)
+- [Facebook](https://www.facebook.com/amadus.kamara.7)
 
 ## 🤝 Contributing
 
