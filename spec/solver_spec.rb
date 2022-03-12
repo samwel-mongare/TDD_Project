@@ -32,5 +32,11 @@ describe Solver do
       value = -2
       expect { solver.factorial(value) }.to raise_error(StandardError)
     end
+
+    it 'the method should return the input value reversed' do
+      value = 'Microverse'
+      result = solver.reverse(value)
+      expect(result).to eq 'esrevorciM'
+    end
   end
 end
