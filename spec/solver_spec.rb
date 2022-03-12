@@ -1,12 +1,36 @@
-require_relative '../solver'
+require './solver'
 
 describe Solver do
-  before :each do
-    @solver = Solver.new
-end
-describe "#new" do
-  it "creates a new instance of the solver class" do
-      @solver.should be_an_instance_of Solver
+  context 'In the Solver class,' do
+    solver = Solver.new
+
+    it 'the method factorial should return the factorial of given integer' do
+      value = 3
+      result = solver.factorial(value)
+      expect(result).to eq 6
+    end
+
+    it 'the method factorial should return the factorial of given integer' do
+      value = 4
+      result = solver.factorial(value)
+      expect(result).to eq 24
+    end
+
+    it 'the method factorial should return the factorial of given integer' do
+      value = 0
+      result = solver.factorial(value)
+      expect(result).to eq 1
+    end
+
+    it 'the method factorial should return the factorial of given integer' do
+      value = 1
+      result = solver.factorial(value)
+      expect(result).to eq 1
+    end
+
+    it 'the method factorial should throw an exception for negative integer' do
+      value = -2
+      expect { solver.factorial(value) }.to raise_error(StandardError)
     end
   end
 end
